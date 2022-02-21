@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'Epilogue-Regular';
+    src: url('../fonts/Epilogue-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Epilogue-Bold';
+    src: url('../fonts/Epilogue-Bold.ttf') format('truetype');
+}
+
+@mixin font($fontFamily, $fontSize, $letterSpacing, $lineHeight) {
+    font-family: $fontFamily;
+    font-size: $fontSize;
+    letter-spacing: $letterSpacing;
+    line-height: $lineHeight;
+}
+
+.font {
+
+    &-h-xl {
+        @include font(Epilogue-Bold, 72px, -1px, 78px);
+        // text-transform: uppercase;
+        // text-align: center;
+    }
+
+    &-h-l {
+        @include font(Epilogue-Bold, 48px, -.5px, 56px);
+        font-family: Epilogue-Bold;
+    }
+
+    &-h-m {
+        @include font(Epilogue-Bold, 18px, -.18px, 32px);
+    }
+
+    &-h-s {
+        @include font(Epilogue-Regular, 16px, 2.5px, 26px);
+    }
+
+    &-quote {
+        @include font(Epilogue-Regular, 20px, .11px, 35px);
+    }
+
+    &-body {
+        @include font(Epilogue-Regular, 18px, .1px, 32px);
+    }
+
+    &-footer {
+        @include font(Epilogue-Regular, 15px, 0, 32px);
+    }
+
+    &-btn {
+        @include font(Epilogue-Bold, 16px, -.16px, 32px);
+    }
+
+    @media screen and (min-device-width: 768px) {}
+
+    @media screen and (min-device-width: 1024px) {}
+
+
+}

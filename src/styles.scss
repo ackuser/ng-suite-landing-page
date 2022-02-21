@@ -1,1 +1,75 @@
-/* You can add global styles to this file, and also import other style files */
+@import '_fonts';
+@import '_colors';
+// @import '_grid';
+// @import '_layout';
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    @extend .font-body;
+    margin: 0;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+app-root {
+    min-height: 100vh;
+}
+
+h1,
+p {
+    margin: 0;
+}
+
+.btn {
+    @extend .font-btn;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    border: none;
+
+    &--primary {
+        background: $green;
+        color: $gray-verydark;
+        width: 256px;
+        height: 61px;
+        padding: 15px 32px;
+        background: $black;
+        color: $white;
+
+        &:hover {
+            background: #B3FFE2;
+            cursor: pointer;
+        }
+
+        &--secondary {
+            background: $green;
+            color: $gray-verydark;
+            min-width: 182px;
+            max-width: 219px;
+            height: 56px;
+            padding: 12px 24px;
+            background: $white;
+            color: $black;
+
+            &:hover {
+                background: $black;
+                color: $white;
+                cursor: pointer;
+            }
+        }
+    }
+}
