@@ -17,14 +17,12 @@
 
 
         &--header {
-            // background: slateblue;
             grid-column: 1 / -1;
             // grid-row: 1 / 2;
             margin: 24px 16px 56px 16px;
         }
 
         &--beta {
-            background: cadetblue;
             grid-column: 1 / span 4;
             // grid-row: beta-top / beta-bottom;
             /* grid-row: 1 / span 10; */

@@ -19,13 +19,13 @@
 
     &-h-xl {
         @include font(Epilogue-Bold, 72px, -1px, 78px);
+        @include font(Epilogue-Bold, 38px, -.53px, 44px);
         // text-transform: uppercase;
         // text-align: center;
     }
 
     &-h-l {
         @include font(Epilogue-Bold, 48px, -.5px, 56px);
-        font-family: Epilogue-Bold;
     }
 
     &-h-m {
@@ -42,6 +42,7 @@
 
     &-body {
         @include font(Epilogue-Regular, 18px, .1px, 32px);
+        @include font(Epilogue-Regular, 16px, .09px, 28px);
     }
 
     &-footer {
