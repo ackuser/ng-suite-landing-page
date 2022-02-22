@@ -32,9 +32,9 @@
         }
 
         &--image {
-            background: lightcoral;
             grid-column: 1 / 5;
             margin: auto 16px;
+            border-radius: 15px;
         }
 
         &--figures {
