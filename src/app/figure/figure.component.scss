@@ -1,0 +1,20 @@
+@import '_fonts';
+@import '_colors';
+
+:host {
+    height: 83px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .amount {
+        @extend .font-h-l;
+        color: $dark-blue;
+    }
+
+    .subtitle {
+        @extend .font-h-s;
+        color: $grey;
+        text-transform: uppercase;
+    }
+}

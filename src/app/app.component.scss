@@ -18,25 +18,21 @@
 
         &--header {
             grid-column: 1 / -1;
-            // grid-row: 1 / 2;
             margin: 24px 16px 56px 16px;
         }
 
         &--beta {
             grid-column: 1 / span 4;
-            // grid-row: beta-top / beta-bottom;
-            /* grid-row: 1 / span 10; */
             margin: auto 16px;
         }
 
         &--image {
             grid-column: 1 / 5;
-            margin: auto 16px;
+            margin: 56px 16px;
             border-radius: 15px;
         }
 
         &--figures {
-            background: chocolate;
             grid-row: 4 / 5;
             grid-column: 1 / -1;
             margin: auto 16px;
