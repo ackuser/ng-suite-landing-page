@@ -1,0 +1,36 @@
+@import '_colors';
+
+:host {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 116px;
+    height: 20px;
+}
+
+.icon {
+    cursor: pointer;
+    display: inline-block;
+    mask-size: cover;
+    background: $dark-blue;
+    width: 20px;
+    height: 20px;
+
+    &:hover,
+    &:focus {
+        opacity: .5;
+    }
+
+    &--fb {
+        mask: url("../../assets/images/icon-facebook.svg");
+    }
+
+    &--instagram {
+        mask: url("../../assets/images/icon-instagram.svg");
+    }
+
+    &--twitter {
+        mask: url("../../assets/images/icon-twitter.svg");
+        height: 16px;
+    }
+}

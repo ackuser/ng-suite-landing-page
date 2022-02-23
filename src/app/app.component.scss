@@ -9,12 +9,7 @@
     // align-items: center;
 
     .item {
-        // text-align: center;
-        // display: flex;
         width: 1fr;
-        // height: 100%;
-        // margin: auto;
-
 
         &--header {
             grid-column: 1 / -1;
@@ -44,7 +39,6 @@
         }
 
         &--footer {
-            background: greenyellow;
             grid-column: 1 / -1;
             margin: auto;
         }
