@@ -1,0 +1,60 @@
+@import '_colors';
+@import '_fonts';
+
+:host {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    height: 929px;
+
+    .image {
+            
+        &--jeremy {
+            position: absolute;
+            top: 0;
+            z-index: 1;
+        }
+
+        &--curved {
+            margin-top: 230px;
+            width: 50px;
+            height: 40px;
+        }
+    }
+
+
+    .wrap {
+        position: absolute;
+        bottom: 0;
+        background: $dark-blue;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        color: $cream-white;
+        text-align: center;
+        height: 748px;
+
+
+        .title {
+            @extend .font-h-l;
+        }
+
+        .description {
+            @extend .font-quote;
+        }
+
+        .company {
+            &__author {
+                @extend .font-h-m;
+            }
+
+            &__name {
+                @extend .font-h-s;
+            }
+        }
+    }
+}

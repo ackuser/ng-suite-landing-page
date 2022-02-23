@@ -37,7 +37,7 @@ p {
     border-radius: 6px;
     border: 1px solid $dark-blue;
     cursor: pointer;
-    
+
     &--primary {
         @extend .font-btn;
         width: 256px;
@@ -71,4 +71,12 @@ p {
 .logo {
     width: auto;
     height: 32px;
+}
+
+.no-bold {
+    font-family: 'Epilogue-Regular';
+}
+
+.uppercase {
+    text-transform: uppercase;
 }
