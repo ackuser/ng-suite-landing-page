@@ -6,6 +6,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-width: 33%;
+    width: calc((768px - 100%) * 1000);
+    // max-width: 100%;
+
+    // flex-basis: 100%;
+    // @media screen and (min-device-width: 768px) {
+        // flex-basis: 33%;
+    // }
+
 
     .amount {
         @extend .font-h-l;

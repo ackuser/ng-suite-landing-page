@@ -5,7 +5,7 @@
     // grid-template-rows: 48px 325px 240px 313px 929px 150px;
     grid-auto-rows: min-content;
     row-gap: 56px;
-
+    position: relative;
 
     .item {
         // width: 1fr;
@@ -32,15 +32,12 @@
 
         &--work {
             grid-column: 1 / -1;
-            padding-left: 16px;
-            padding-right: 16px;
+            margin: unset;
         }
 
         &--footer {
             margin: auto;
             grid-column: 1 / -1;
         }
-
-
     }
 }

@@ -10,11 +10,11 @@
     height: 929px;
 
     .image {
-            
+
         &--jeremy {
             position: absolute;
             top: 0;
-            z-index: 1;
+            z-index: 2;
         }
 
         &--curved {
@@ -37,7 +37,9 @@
         color: $cream-white;
         text-align: center;
         height: 748px;
-
+        z-index: 1;
+        padding-left: 16px;
+        padding-right: 16px;
 
         .title {
             @extend .font-h-l;

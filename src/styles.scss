@@ -21,7 +21,7 @@ body {
 html,
 body {
     // overflow-x: hidden;
-    background: $cream;
+    background: $cream-white;
 }
 
 app-root {
@@ -58,7 +58,7 @@ p {
         min-width: 182px;
         max-width: 219px;
         min-height: 48px;
-        background: $cream;
+        background: $cream-white;
 
         &:hover {
             background: $dark-blue;

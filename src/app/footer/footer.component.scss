@@ -2,15 +2,33 @@
 @import '_fonts';
 
 :host {
-    width: 125px;
-    height: 150px;
+    width: 100%;
+    height: 420px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    background: $cream;
+    position: absolute;
+    bottom: 0;
 
-    .info{
-        @extend .font-footer;
-        color: $grey;
+    .container {
+        width: 125px;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 190px;
+
+        @media screen and (min-device-width: 768px) {
+            width: 100%;
+            flex-direction: row;
+        }
+
+        &__info {
+            @extend .font-footer;
+            color: $grey;
+        }
     }
+
 }
