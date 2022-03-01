@@ -6,6 +6,12 @@
     flex-direction: column;
     justify-content: space-between;
     height: 325px;
+
+    @media screen and (min-device-width: 768px) {
+        width: 534px;
+        height: 354px;
+        position: relative;
+    }
 }
 
 .image {
@@ -13,6 +19,12 @@
     right: 14%;
     width: 150px;
     height: 19px;
+
+    @media screen and (min-device-width: 768px) {
+        width: 230px;
+        height: 29px;
+        top: -20px;
+    }
 }
 
 .title {
@@ -26,4 +38,8 @@
     @extend .font-body;
     color: $grey;
     margin-bottom: 32px;
+
+    @media screen and (min-device-width: 768px) {
+        width: 350px;
+    }
 }

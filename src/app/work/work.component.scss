@@ -9,12 +9,19 @@
     position: relative;
     height: 929px;
 
+    @media screen and (min-device-width: 768px) {
+        height: 865px;
+    }
+
     .image {
 
         &--jeremy {
             position: absolute;
             top: 0;
             z-index: 2;
+            @media screen and (min-device-width: 768px) {
+                top: -50px;
+            }
         }
 
         &--curved {
@@ -40,6 +47,11 @@
         z-index: 1;
         padding-left: 16px;
         padding-right: 16px;
+
+        @media screen and (min-device-width: 768px) {
+            height: 684px;
+            bottom: 50px;
+        }
 
         .title {
             @extend .font-h-l;

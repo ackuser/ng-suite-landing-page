@@ -20,12 +20,17 @@
     &-h-xl {
         @include font(Epilogue-Bold, 72px, -1px, 78px);
         @include font(Epilogue-Bold, 38px, -.53px, 44px);
+        @media screen and (min-device-width: 768px) {
+            @include font(Epilogue-Bold, 56px, -.78px, 64px);
+        }
         // text-align: center;
     }
 
     &-h-l {
-        @include font(Epilogue-Bold, 48px, -.5px, 56px);
         @include font(Epilogue-Bold, 40px, -.42px, 48px);
+        @media screen and (min-device-width: 768px) {
+            @include font(Epilogue-Bold, 48px, -.5px, 56px);
+        }
     }
 
     &-h-m {
