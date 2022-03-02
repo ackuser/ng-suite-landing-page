@@ -9,9 +9,14 @@
     position: relative;
     height: 929px;
 
-    @media screen and (min-device-width: 768px) {
+    @media screen and (min-device-width: 768px) and (max-device-width: 1023px) {
         height: 865px;
     }
+
+    @media screen and (min-device-width: 1024px) {
+        height: 600px;
+    }
+
 
     .image {
 
@@ -19,8 +24,16 @@
             position: absolute;
             top: 0;
             z-index: 2;
-            @media screen and (min-device-width: 768px) {
+            content: url("../../assets/images/image-jeremy-small.png");
+
+            @media screen and (min-device-width: 768px) and (max-device-width: 1023px) {
                 top: -50px;
+            }
+
+            @media screen and (min-device-width: 1024px) {
+                content: url("../../assets/images/image-jeremy-large.png");
+                left: 10%;
+                height: 600px;
             }
         }
 
@@ -28,6 +41,13 @@
             margin-top: 230px;
             width: 50px;
             height: 40px;
+
+            @media screen and (min-device-width: 1024px) {
+                position: absolute;
+                margin-top: -18%;
+                width: 64px;
+                height: 52px;
+            }
         }
     }
 
@@ -48,17 +68,31 @@
         padding-left: 16px;
         padding-right: 16px;
 
-        @media screen and (min-device-width: 768px) {
+        @media screen and (min-device-width: 768px) and (max-device-width: 1023px) {
             height: 684px;
             bottom: 50px;
         }
 
+        @media screen and (min-device-width: 1024px) {
+            height: 545px;
+            text-align: left;
+            align-items: baseline;
+            padding-left: 45%;
+            padding-right: 6%;
+        }
+
         .title {
             @extend .font-h-l;
+            @media screen and (min-device-width: 1024px) {
+             width: 298px;
+            }
         }
 
         .description {
             @extend .font-quote;
+            @media screen and (min-device-width: 1024px) {
+            
+               }
         }
 
         .company {
@@ -69,6 +103,21 @@
             &__name {
                 @extend .font-h-s;
             }
+
+            @media screen and (min-device-width: 1024px) {
+                width: 190px;
+               }
         }
     }
+}
+
+
+@media screen and (min-device-width: 1024px) {
+
+    .title,
+    .description,
+    .company {
+        margin-left: 30%;
+    }
+
 }

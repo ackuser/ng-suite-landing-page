@@ -5,8 +5,12 @@
     align-items: center;
     flex-wrap: wrap;
 
-    @media screen and (min-device-width: 768px) {
+    @media screen and (min-device-width: 768px) and (max-device-width: 1023px) {
         height: 83px;
+    }
+
+    @media screen and (min-device-width: 1024px) {
+        height: 100%;
     }
 
 }

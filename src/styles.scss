@@ -48,6 +48,7 @@ p {
 
         &:hover {
             background: $gradient;
+            border: none;
         }
     }
 
@@ -59,6 +60,11 @@ p {
         max-width: 219px;
         min-height: 48px;
         background: $cream-white;
+
+        @media screen and (min-device-width: 1024px) {
+            width: 219px;
+            height: 56px;
+        }
 
         &:hover {
             background: $dark-blue;
