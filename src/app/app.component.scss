@@ -96,6 +96,8 @@
         &--footer {
             grid-column: 1 / -1;
 
+            margin-left: unset;
+
             @media screen and (min-device-width: 1024px) {
                 margin: auto 0;
             }
